@@ -1,0 +1,59 @@
+{
+    "articles":
+    [
+        {
+            "_id": "b57fcea7539c76f3489b55c8c33d3c42",
+            "_score": 8.520617,
+            "author": "Ji Da-Gyum",
+            "authors": "Ji Da-Gyum",
+            "clean_url": "koreaherald.com",
+            "country": "KR",
+            "excerpt": "The UN Security Council on Thursday convened a public discussion on the human rights situation in North Korea, the first such discussion since 2017. The open briefing occurred following a request made earlier in the month by the United States, Albania, South Korea, and Japan. The primary purpose of this briefing was to illuminate the relationship between North Korea's human rights violations and abuses, and their imp...",
+            "is_opinion": false,
+            "language": "en",
+            "link": "https://www.koreaherald.com/view.php?ud=20230818000433",
+            "media": "http://res.heraldm.com/content/image/2023/08/18/20230818000429_0.jpg",
+            "published_date": "2023-08-18 01:57:27",
+            "published_date_precision": "full",
+            "rank": 3074,
+            "rights": "koreaherald.com",
+            "summary": "Hwang Joon-kook, the South Korean ambassador to the United Nations, speaks during a meeting of the United Nations Security Council to discuss the human rights situation in North Korea on Thursday at the United Nations headquarters in New York, (Photo - AP) Hwang Joon-kook, the South Korean ambassador to the United Nations, speaks during a meeting of the United Nations Security Council to discuss the human rights situation in North Korea on Thursday at the United Nations headquarters in New York, (Photo - AP)\n\nThe UN Security Council on Thursday convened a public discussion on the human rights situation in North Korea, the first such discussion since 2017.",
+            "title": "After 6-year hiatus, UN Security Council holds public discussion on NK human rights",
+            "topic": "news",
+            "twitter_account": "@Herald"
+        }
+    ],
+    "page": 1,
+    "page_size": 1,
+    "status": "ok",
+    "total_hits": 10000,
+    "total_pages": 10000,
+    "user_input":
+    {
+        "countries": null,
+        "from": "2023-08-15 00:00:00",
+        "from_rank": null,
+        "lang":
+        [
+            "en"
+        ],
+        "not_countries": null,
+        "not_lang": null,
+        "not_sources":
+        [],
+        "page": 1,
+        "published_date_precision": null,
+        "q": "United Nations",
+        "ranked_only": "True",
+        "search_in":
+        [
+            "title_summary_en"
+        ],
+        "size": 1,
+        "sort_by": "relevancy",
+        "sources": null,
+        "to": null,
+        "to_rank": null,
+        "topic": null
+    }
+}

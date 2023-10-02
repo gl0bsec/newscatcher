@@ -32,10 +32,10 @@ def fetch_and_save_to_excel(q, from_date, page_size=100):
             df = pd.DataFrame(articles)
             
             # Define the Excel filename based on the query parameters
-            excel_filename = f"{q}_{safe_from_date}_page_size_{page_size}.xlsx"
+            excel_filename = f"{q}_{safe_from_date}_page_size_{page_size}.csv"
             
             # Save DataFrame to Excel
-            df.to_excel(excel_filename, index=False)
+            df.csv(excel_filename, index=False)
             print(f"Data saved to {excel_filename}")
         else:
             print("No articles found.")

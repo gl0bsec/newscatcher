@@ -1,7 +1,7 @@
 #%%
 import requests
 import pandas as pd
-import openpyxl
+# import openpyxl
 import json
 import os
 

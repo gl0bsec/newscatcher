@@ -33,7 +33,7 @@ def process_text(data, var):
         ents = []
         for ent in doc.ents:
             ents.append(dict([('ent_text',ent.text),('ent_type',ent.label_)]))
-        entities.append(ents)
+        entities.append(str(ents))
     
     # BERTopic 
     # topic_model = BERTopic(embedding_model=nlp)
@@ -42,5 +42,6 @@ def process_text(data, var):
     # fig.show()
     
     return list(zip(uuid,[e['neg']for e in sentiment],[e['neu']for e in sentiment]
-                    ,[e['pos']for e in sentiment],[e['compound']for e in sentiment],entities))
+                    ,[e['pos']for e in sentiment],[e['compound']for e in sentiment],
+                    entities))
 

@@ -13,9 +13,9 @@ from_date="2023/08/15"
 page_size=20
 safe_from_date = from_date.replace('/', '_')
 
-for term in search_terms:
+for q in search_terms:
     filenames.append(f"{q}_{safe_from_date}_page_size_{page_size}.json")
-    api.fetch_and_save_to_excel(q=term, from_date="2023/08/15", page_size=20)
+    api.fetch_and_save_to_excel(q=q, from_date="2023/08/15", page_size=20)
 
 
 # Deserialize and dump
@@ -26,6 +26,16 @@ def add_unique_id(df):
     """
     df['unique_id'] = range(1, len(df) + 1)
     return df
+
+def load_data_df(df,db_name,table_name):
+    # Step 3: Create SQLite DB
+    conn = sqlite3.connect(db_name)
+    
+    # Step 4: Create Table and Insert Data
+    df.to_sql(table_name, conn, if_exists='replace', index=False)
+    print(f"Successfully loaded data into {db_name}, table name: {table_name}")
+    conn.close()
+    return 
 
 def load_data(filename,db_name,table_name):
     with open(filename, 'r') as f:

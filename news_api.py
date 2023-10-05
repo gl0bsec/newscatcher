@@ -7,7 +7,7 @@ import os
 
 def fetch_and_save_to_excel(q, from_date, page_size=100):
     url = 'https://api.newscatcherapi.com/v2/search'
-    headers = {'x-api-key': 'UAwfLdafFkZewrWSwR6fw7XNUq0bnQPaBgbCxhi_kSM'}
+    headers = {'x-api-key': 'XXX'}
     params = {'q': q, 'from': from_date, 'page_size': page_size, "lang": "en"}
     # Replace slashes in date with underscores
     safe_from_date = from_date.replace('/', '_')
@@ -42,6 +42,7 @@ def fetch_and_save_to_excel(q, from_date, page_size=100):
     else:
         print(f"Failed to fetch data: {response.status_code}")
         print(f"Failed to fetch data: {response.text}")
+        
 #%%
 # Example usage
 search_terms = ["United Nations", "United Nations universal periodic review", "united nations committee against torture", "refugees", "migrants"]

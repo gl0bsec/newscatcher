@@ -10,7 +10,7 @@ import news_api as api
 search_terms = ["United Nations", "United Nations universal periodic review", "united nations committee against torture", "refugees", "migrants"]
 filenames = []
 from_date="2023/08/15"
-page_size=20
+page_size=50
 safe_from_date = from_date.replace('/', '_')
 
 for q in search_terms:

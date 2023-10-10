@@ -1,11 +1,11 @@
-#%%
+
 #Import common  
 import json
 import pandas as pd
 import sqlite3
 
 #Load data from newscatcher
-#%%
+
 import news_api as api
 search_terms = ["United Nations", "United Nations universal periodic review", "united nations committee against torture", "refugees", "migrants"]
 filenames = []
@@ -19,7 +19,6 @@ for q in search_terms:
 
 
 # Deserialize and dump
-#%% 
 def add_unique_id(df):
     """
     Add a unique ID column to the DataFrame.
@@ -58,4 +57,3 @@ def mass_load(filenames,db_name,table_name):
     for name in filenames:
         load_data(name,db_name,table_name) 
     return
-# %%

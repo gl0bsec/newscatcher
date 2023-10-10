@@ -3,7 +3,8 @@
 ## Import packages 
 import spacy 
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from bertopic import BERTopic
+# from bertopic import BERTopic
+
 
 #%% 
 ## Process data 
@@ -45,3 +46,5 @@ def process_text(data, var):
                     ,[e['pos']for e in sentiment],[e['compound']for e in sentiment],
                     entities))
 
+
+# %%
